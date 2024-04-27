@@ -6,10 +6,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1 data-testid="app-header-h1" >DENEME TITLE</h1>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
+        <a data-testid = "app-header-a"
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
@@ -17,6 +18,8 @@ function App() {
         >
           Learn React
         </a>
+        <input type='checkbox' data-testid ="app-header-checkbox" />
+        <input type='text' data-testid='app-header-text'  />
       </header>
     </div>
   );
